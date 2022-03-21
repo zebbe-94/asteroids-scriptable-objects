@@ -14,12 +14,7 @@ namespace RuntimeSets.Editor
         {
             _target = (LaserRuntimeSet)target;
 
-            if (_amount == _target.Amount)
-            {
-                return false;
-            }
-
-            return true;
+            return _amount != _target.Amount;
         }
         
         public override void OnInspectorGUI()
